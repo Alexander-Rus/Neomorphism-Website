@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/main.css">
+  <title>Alex Rus: Mobile Development</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            Skills
+          </a>
+        </li>
+        <li class="nav-item current">
+          <a href="work.html" class="nav-link">
+            Projects
+          </a>
+        </li>
+        <li class="nav-item">
+            <a href="hobbies.html" class="nav-link">
+              Activities
+            </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="lg-heading">
+      Mobile 
+      <span class="text-secondary">Development</span>
+    </h1>
+    <h2 class="sm-heading">
+        Goat-Anon Mobile, Annonymous Social Media Discussion 
+    </h2>
+
+    <div class="activities-info">
+
+
+      <div class="track">
+        <h3 class="text-secondary">The Application</h3>
+        <hr>
+        <p>
+            Goat Anon Mobile is a social media mobile application that promotes anonymity and less filtered content than other social media applications. All users will be allowed to add text content to the main timeline as well as add comments and reactions to posts. A feature to add customizability for the user is Filtering the posts based on certain characteristics. Data will be stored on a database to allow users to access public data remotely from any device.         
+        </p>
+        <br>
+        <p>Built Using:</p>
+        <strong>
+            <ul>
+                <li><a href="https://reactnative.dev/" target="_blank">React Native </a></li>
+                <li><a href="https://expo.io/" target="_blank">Expo</a></li>
+                <li><a href="https://firebase.google.com/" target="_blank">Firebase </a></li>
+                <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code </a></li>
+            </ul>
+        </strong>
+        <br>
+        <a href="https://github.com/Alexander-Rus/Mobile-Application-Goat-Anon" target='_blank'>Github <i class="fab fa-github fa-2x"></i></a>
+
+
+        </div>
+
+
+
+      <img src="./img/Mobile4.PNG" alt="group Picutre" class="track-image">
+
+      <div class="track2">
+        <p>
+            When designing our mobile application, we first wanted to get a sense of what our application should look like from a UI perspective. We began by creating a few simple UI mock-ups using the design tool Canva. Canva is an online design platform that allows users to easily create graphics, posters, logos, presentations, and even UI sketches. We intended to have the application split into 4 different views, the “Loading Page”, the “Main Activity”, “Creating a New Post”, and “Viewing a Post”.
+        </p>
+      </div>
+      <div class="track3">
+        <p>
+            For this project, we decided to use React Native as our programming framework of choice, as it would allow us to develop our application on either a Windows or MacOS operating system and then be able to deploy said application to either Android or iOS. When developing in React Native, one must choose between using vanilla React Native or Expo. Expo is a toolchain that is built on top of React Native and allows users to quickly initialize projects and view them on the Expo client application. The one major drawback of vanilla React Native development is that it requires the use of either Android Studio or Xcode if you wish to deploy to either Android or iOS. As such, it is virtually impossible to develop an iOS application using a Windows machine, because it does not have access to Xcode. Therefore, for this project we did end up using Expo and the Expo Client as our method of development.        
+        </p>
+      </div>
+      <img src="./img/Mobile1.PNG" alt="group Picutre" class="track-image2">
+
+      <br>
+      <div class="blender">
+
+        <p>
+            After exploring the positives and negatives of using an SQL database compared to Firebase, we concluded that Firebase would most likely be our best option. Firebase is convenient in that it provides a near full back-end system, and allows us to connect directly to the database from our Expo React Native project. Traditionally, applications require both a back-end and a front-end, however for this application, we can retrieve our information purley in our front-end and rely on Firebase to manage our data and delivery on the back-end. When comparing an SQL data retreival system to a NoSQL data system, we found that the SQL systems generally perform faster due to thier structured nature. Therefore, if we were to expand this application, we would likely migrate to a fully operation SQL database with a dedicated back-end system. However, for this project, Firebase would more than suffice.
+        </p>
+      </div>
+      <img src="./img/Mobile6.png" alt="blender Picutre" class="blender-image">
+      <div class="blender2">
+        <p>
+            Using Firebase’s Realtime Database, we structured our data in such a way as to keep track of what data belongs to which post. Firebase is very good at managing the state of child nodes, and thus we treated each instance of a new post as a new child. Within each post there exists the pertinent information associated with said post, as well as a child containing all of the associated replies to the post. By structuring the data in this manner, we can easily see when new data is created and therefore when an update to the application should occur.        </p>
+      </div>
+      <img src="./img/Mobile7.png" alt="blender Picutre" class="blender-image2">
+      <img src="./img/Mobile8.png" alt="blender Picutre" class="blender-video1">      
+      <img src="./img/Mobile9.png" alt="blender Picutre" class="blender-video2">      
+      <div class="sculpting">
+        <h3 class="text-secondary">Demo Video</h3>
+        <hr>
+        <p>
+            Check out this demo video we made, showing the application in action.         
+        </p>
+      </div>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ScTh0SwF35o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </main>
+
+
+  <footer id="main-footer">
+    Copyright &copy; 2020
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

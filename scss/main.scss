@@ -1,0 +1,860 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400,600,700,800,900&display=swap');
+@import 'config';
+@import 'menu';
+
+
+
+//Headings
+h1, h2, h3 {
+    margin: 0; 
+    font-weight: 400;
+    
+    &.lg-heading {
+        font-size: 6rem;
+    }
+
+    &.sm-heading {
+        margin-top: -0.5rem;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%
+}
+
+.text-secondary {
+    color:$secondary-color;
+}
+
+main {
+    padding: 4rem;
+    justify-content: center;
+    height: 100%;
+    background: #ebf5fc;
+    min-height: calc(100vh - 60px);
+    align-items: center;
+    text-align: center;
+
+    
+    .icons {
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+
+        a {
+            padding: 0.4rem;
+
+            &:hover {
+                color: $secondary-color;
+                @include easeOut()
+            }
+        }
+    }
+}
+
+.about-info {
+    display: grid;
+    margin: auto;
+    grid-gap: 30px;
+    max-width: 1600px;
+    grid-template-areas:
+      'bio bio bio'
+      'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+  
+    .bio-image {
+      border-radius: 50%;
+    }
+
+  
+    .bio {
+      grid-area: bio;
+      font-size: 1rem;
+      justify-content: left;
+      align-items: left;
+      text-align: left;
+      color: $primary-color;
+      padding: 30px 20px;
+      background: #ebf5fc;
+      border-radius: 40px;
+      box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 1),
+      inset 6px 6px 20px rgba(0, 0, 0, 0.1);
+    }
+  
+    .job-1 {
+      grid-area: job1;
+      animation: job1animation;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+
+    }
+
+    @keyframes job1animation {
+        0% {margin-top: 100rem}
+        100% {margin-top: 0}
+    }
+  
+    .job-2 {
+      grid-area: job2;
+      animation: job2animation;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes job2animation {
+        0% {margin-top: 100rem}
+        100% {margin-top: 0}
+    }
+  
+    .job-3 {
+      grid-area: job3;
+      animation: job3animation;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+    }
+    
+    @keyframes job3animation {
+        0% {margin-top: 100rem}
+        100% {margin-top: 0}
+    }
+  
+    .job {
+      padding: 0.5rem;
+      text-align: left;
+      margin: auto;
+    }
+    a {
+        color: $primary-color;
+        text-decoration: none;
+    }
+    a:hover {
+        color:#32a3b1;
+    }
+}
+
+.activities-info {
+    display: grid;
+    margin: auto;
+    grid-gap: 30px;
+    max-width: 1600px;
+    grid-template-areas:
+      'track track track'
+      'track-image1 track2 track2'
+      'track3 track3 track-image2'
+      'blender blender blender'
+      'blender-image1 blender-image1 blender-image1'
+      'blender2 blender2 blender2'
+      'blender-image2 blender-video1 blender-video2'
+      'sculpting sculpting sculpting'
+      'sculpting-image1 sculpting-image2 sculpting-image3'
+      'sculpting2 sculpting2 sculpting2'
+      'sculpting-image4 sculpting-image5 sculpting-image6'
+      'sculpting3 sculpting3 sculpting3'
+      'sculpting-image7 sculpting-image8 sculpting-image9';
+    grid-template-columns: repeat(3, 1fr);
+  
+
+    .sculpting {
+        grid-area: sculpting;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+    }
+    .sculpting2 {
+        display: flex;
+        grid-area: sculpting2;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+    }
+    .sculpting3 {
+        display: flex;
+        grid-area: sculpting3;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+    }
+
+    .sculpting-image1 {
+        border-radius: 5%;
+        grid-area: sculpting-image1;
+        max-width: 70%;
+    }
+    .sculpting-image2 {
+        align-items: center;
+        border-radius: 5%;
+        grid-area: sculpting-image2;
+        max-width: 70%;
+    }
+    .sculpting-image3 {
+
+        border-radius: 5%;
+        grid-area: sculpting-image3;
+        max-width: 70%;
+    }
+    .sculpting-image4 {
+        display: flex;
+        align-items: center;
+        border-radius: 5%;
+        max-width: 100%;
+        grid-area: sculpting-image4;
+        max-width: 70%;
+    }
+    .sculpting-image5 {
+        display: flex;
+        align-items: center;
+        border-radius: 5%;
+        grid-area: sculpting-image6;
+        max-width: 70%;
+    }
+    .sculpting-image6 {
+        display: flex;
+        align-items: center;
+        border-radius: 5%;
+        grid-area: sculpting-image5;
+        max-width: 70%;
+    }
+    .sculpting-image7 {
+        display: flex;
+        align-items: center;
+        border-radius: 5%;
+        grid-area: sculpting-image7;
+        max-width: 70%;
+    }
+    .sculpting-image8 {
+        display: flex;
+        align-items: center;
+        border-radius: 5%;
+        grid-area: sculpting-image8;
+        max-width: 70%;
+    }
+    .sculpting-image9 {
+        display: flex;
+        align-items: center;
+        border-radius: 5%;
+        grid-area: sculpting-image9;
+        max-width: 70%;
+
+    }
+
+
+    .track-image {
+      border-radius: 10%;
+      max-width: 100%;
+      grid-area: track-image1;
+      margin-top: 10%;
+    }
+    .blender-image {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border-radius: 10%;
+        max-width: 100%;
+        grid-area: blender-image1;
+        max-width: 30%;
+    }
+    .blender-image2 {
+        display: flex;
+        align-items: center;
+        border-radius: 10%;
+        grid-area: blender-image2;
+        max-width: 90%;
+    }
+    .blender-video1 {
+        display: flex;
+        align-items: center;
+        grid-area: blender-video1;
+        max-width: 70%;
+        padding: none;
+    }
+    .blender-video2 {
+        display: flex;
+        align-items: center;
+        border-radius: 10%;
+        max-width: 90%;
+        grid-area: blender-video2;
+    }
+
+    .track-image2 {
+        border-radius: 10%;
+        max-width: 100%;
+        grid-area: track-image2;
+        margin-top: 10%;
+      }
+  
+    .track {
+      grid-area: track;
+      font-size: 1.5rem;
+      justify-content: left;
+      align-items: left;
+      text-align: left;
+      color: $primary-color;
+    }
+
+    .track2 {
+        grid-area: track2;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+      }
+    
+      .track3 {
+        grid-area: track3;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+      }
+
+    .blender {
+        grid-area: blender;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+    }
+
+    .blender2 {
+        grid-area: blender2;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+    }
+  
+    .job-1 {
+      animation: job1animation;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes job1animation {
+        0% {margin-top: 100rem}
+        100% {margin-top: 0}
+    }
+  
+    .job-2 {
+      grid-area: job2;
+      animation: job2animation;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes job2animation {
+        0% {margin-top: 100rem}
+        100% {margin-top: 0}
+    }
+  
+    .job-3 {
+      grid-area: job3;
+      animation: job3animation;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes job3animation {
+        0% {margin-top: 100rem}
+        100% {margin-top: 0}
+    }
+  
+    .job {
+      padding: 0.5rem;
+      text-align: left;
+    }
+    a {
+        color: $primary-color;
+        text-decoration: none;
+    }
+    a:hover {
+        color:#32a3b1;
+    }
+}
+
+
+
+.fullstack-info {
+    display: grid;
+    margin: auto;
+    grid-gap: 30px;
+    max-width: 1600px;
+    grid-template-areas:
+      'intro intro intro'
+      'tech tech-sub git_view'
+      'wpi wpi wpi_logo '
+      'Back-end1 Back-end1 Back-end1'
+      'Back-end-img1 Back-end-img2 Back-end-img3'
+      'front-end front-end front-end'
+      'front-end2 front-end2 front-endimg1'
+      'front-endimg2 front-end3 front-end3'
+      'front-end4 front-end4 front-endimg3'
+      'front-endimg4 front-end5 front-end5'
+      'front-end6 front-end6 front-endimg6'
+      'front-endimg7 front-end7 front-end7'
+      'front-end8 front-end8 front-end8';
+
+    grid-template-columns: repeat(3, 1fr);
+  
+    .intro {
+        grid-area: intro;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+        padding: 40px 30px;
+        background: #ebf5fc;
+        border-radius: 40px;
+        box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 1),
+        inset 6px 6px 20px rgba(0, 0, 0, 0.1);
+    }
+    .tech {
+        grid-area: tech;
+        padding: 0.5rem;
+        text-align: left;
+        padding: 40px 30px;
+    }
+    .tech-sub {
+        grid-area: tech-sub;
+        padding: 0.5rem;
+        text-align: left;
+        padding: 40px 30px;
+    }
+    .git_view {
+        grid-area: git_view;
+        padding: 0.5rem;
+        text-align: left;
+        padding: 40px 30px;
+    }
+    .wpi {
+        grid-area: wpi;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+
+    }
+    .wpi_logo {
+        grid-area: wpi_logo;
+        max-width: 100%;
+    }
+    .Back-end1 {
+        grid-area: Back-end1;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+
+    }
+    .Back-end-img1 {
+        grid-area: Back-end-img1;
+        max-width: 100%;
+    }
+    .Back-end-img2 {
+        grid-area: Back-end-img2;
+        max-width: 100%;
+    }
+    .Back-end-img3 {
+        grid-area: Back-end-img3;
+        max-width: 100%;
+    }
+    .front-end {
+        grid-area: front-end;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+    }
+    .front-end2 {
+        grid-area: front-end2;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+    }
+    .front-endimg1 {
+        grid-area: front-endimg1;
+        max-width: 100%;
+    }
+    .front-end3 {
+        grid-area: front-end3;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+    }
+    .front-endimg2 {
+        grid-area: front-endimg2;
+        max-width: 100%;
+    }
+    .front-end4 {
+        grid-area: front-end4;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+    }
+    .front-endimg3 {
+        grid-area: front-endimg3;
+        max-width: 100%;
+    }
+    .front-end5 {
+        grid-area: front-end5;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+    }
+    .front-endimg4 {
+        grid-area: front-endimg4;
+        max-width: 100%;
+    }
+    .front-end6 {
+        grid-area: front-end6;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+    }
+    .front-endimg6 {
+        grid-area: front-endimg6;
+        max-width: 100%;
+    }
+    .front-end7 {
+        grid-area: front-end7;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+    }
+    .front-endimg7 {
+        grid-area: front-endimg7;
+        max-width: 100%;
+    }
+    .front-end8 {
+        grid-area: front-end8;
+        font-size: 1.5rem;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        color: $primary-color;
+    }
+    a {
+        color: $primary-color;
+        text-decoration: none;
+    }
+    a:hover {
+        color:#32a3b1;
+    }
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body1 {
+    display: flex;
+    background: #ebf5fc;
+    margin-top: 500%;
+    justify-content: center;
+    align-items: center;
+}
+.color1 {
+    color: #32a3b1;;
+}
+
+.title {
+    display: flex;
+    font-size: 5em;
+    justify-content: center;
+    align-items: center;
+    background: #ebf5fc;
+
+}
+.subheading {
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    background: #ebf5fc;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin-top: 45rem;
+}
+
+.container .card1 {
+    animation: cardAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.container .card2 {
+    animation: cardAnimation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.container .card3 {
+    animation: cardAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cardAnimation {
+    0% {transform: translate(0px, 100px)}
+    100% {transform: translate(0px, -150px)}
+}
+
+.container .card {
+    width: 300px;
+    margin: 20px;
+    padding: 40px 20px;
+    background: #ebf5fc;
+    border-radius: 40px;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+    6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container .card:hover {
+    box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 0.5),
+    inset 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.container .card .imgBx {
+    position: relative;
+    text-align: center;
+}
+
+.container .card .imgBx img {
+    max-width: 120px;
+}
+
+.container .card .imgBx .aboutImg:hover {
+    animation: simple;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-iteration-count: 0;
+    @include easeOut;
+}
+
+@keyframes simple {
+    0% {transform: translate(0px, 0px)}
+    50% {transform: translate(0px, -15px)}
+    100% {transform: translate(0px, 0px)}
+
+}
+
+.container .card .imgBx .codeImg:hover {
+    animation: code1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-iteration-count: 0;
+}
+
+@keyframes code1 {
+    0% {transform: translate(0px, 0px)}
+    50% {transform: translate(0px, -25px)}
+    100% {transform: translate(0px, 0px)}
+
+}
+
+.container .card .imgBx .codeImg2:hover {
+    animation: code2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-iteration-count: 0;
+}
+
+@keyframes code2 {
+    0% {transform: translate(0px, 0px)}
+    50% {transform: translate(0px, -25px)}
+    100% {transform: translate(0px, 0px)}
+
+}
+
+
+.container .card .contentBx {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container .card .contentBx h2 {
+    color: #32a3b1;
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+.container .card .contentBx p {
+    color: #32a3b1;
+    font-size: 0.8em;
+}
+
+.container .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 40px;
+    color: #32a3b1;
+    font-size: 13px;
+    text-decoration: none;
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
+    4px 4px 15px rgba(0,0,0,0.1);
+}
+
+.container .card .contentBx a:hover {
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
+    inset  4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .card a:hover span {
+    display: block;
+    transform: scale(0.98);
+}
+
+.container .card:hover .imgBx,
+.container .card:hover .contentBx {
+    transform: scale(0.98);
+}
+
+.sidespacing {
+    width: 1px;
+}
+
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: #ebf5fc;
+    color: $secondary-color;
+    height: 60px; 
+}
+
+
+
+
+
+.container-wide {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 2000px;
+    animation: movin;
+    animation-duration: 1.0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movin {
+    0% {margin-top: 100rem}
+    100% {margin-top: 35rem}
+}
+
+.container-wide .card {
+    width: 340px;
+    margin: 10px;
+    padding: 15px 15px;
+    background: #ebf5fc;
+    border-radius: 40px;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+    6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.container-wide .card .imgBx {
+    position: relative;
+    text-align: center;
+}
+
+.container-wide .card .imgBx img {
+    max-width: 290px;
+    border-radius: 15px;
+}
+
+.container-wide .card .contentBx {
+    position: relative;
+    margin-top: 20px;
+}
+
+.container-wide .card .contentBx h2 {
+    color: #32a3b1;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+
+
+.container-wide .card .contentBx a {
+    display: inline-block;
+    padding: 10px 10px;
+    margin-top: 15px;
+    border-radius: 40px;
+    color: #32a3b1;
+    font-size: 10px;
+    text-decoration: none;
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
+    4px 4px 15px rgba(0,0,0,0.1);
+}
+
+.container-wide .card .contentBx p {
+    color: #32a3b1;
+    font-size: 11px;
+    text-decoration: none;
+
+}
+
+.container-wide .card .contentBx a:hover {
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
+    inset  4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-wide .card a:hover span {
+    display: block;
+    transform: scale(0.98);
+}
+
+
+@import 'mobile';

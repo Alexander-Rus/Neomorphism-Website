@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/main.css">
+  <title>Alex Rus: Full-Stack Web Development</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            Skills
+          </a>
+        </li>
+        <li class="nav-item current">
+          <a href="work.html" class="nav-link">
+            Projects
+          </a>
+        </li>
+        <li class="nav-item">
+            <a href="hobbies.html" class="nav-link">
+              Activities
+            </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="lg-heading">
+      Full-Stack 
+      <span class="text-secondary">Web Development</span>
+    </h1>
+    <h2 class="sm-heading">
+        A Web Application for Mitigating the Impact of Fake News 
+    </h2>
+
+    <div class="fullstack-info">
+        <div class="intro">
+            <h3 class="text-secondary">The Application</h3>
+            <hr>
+            <p>
+                Welcome to the 'Mitigating the Impact of Fake News MQP' Web Application! This project is the interactive portion of the Major Qualifying Project completed by WPI students Alexander Rus and Alex Tian and advised by Dr. Kyumin Lee and Ben Vo PhD. Using this application, you can get the recommended URLs for a particular Twitter user based on their previously visited URLs. The application is built using the M.E.R.N stack among a number of other technologies listed below.             
+            </p>
+        </div>
+        <div class="tech">
+            <p>Built Using:</p>
+            <strong >
+                <ul style="color:darkorange;">
+                    <li><a href="https://www.mongodb.com/" target="_blank">MongoDB</a></li>                
+                    <li><a href="https://nodejs.org/en/" target="_blank">Node.js</a></li>
+                    <li><a href="https://reactjs.org/" target="_blank">React</a></li>
+                    <li><a href="https://developer.twitter.com/en/docs" target="_blank">Twitter API</a></li>
+                    <li><a href="https://aws.amazon.com/" target="_blank">AWS EC2</a></li>
+                    <li><a href="https://www.heroku.com/" target="_blank">Heroku</a></li>
+                </ul>
+            </strong>
+        </div>
+        
+        <div class="tech-sub">
+            <p>Node Modules:</p>
+            <ul style="color:darkorange;">
+                <li><a href="https://expressjs.com/" target="_blank">Express</a></li>
+                <li><a href="https://www.npmjs.com/package/concurrently" target="_blank">Concurrently</a></li>                
+                <li><a href="https://www.npmjs.com/package/nodemon" target="_blank">Nodemon</a></li>
+                <li><a href="https://material-ui.com/" target="_blank">Material UI</a></li>
+                <li><a href="https://www.npmjs.com/package/react-particles-js" target="_blank">react-particles-js</a></li>
+                <li><a href="https://www.react-spring.io/" target="_blank">React Spring</a></li>
+                <li><a href="https://www.npmjs.com/package/recharts" target="_blank">Recharts</a></li>
+                <li><a href="https://www.npmjs.com/package/d3-ease" target="_blank">D3-ease</a></li>
+            </ul>
+        </div>
+        <div class="git_view">
+            <a href="https://github.com/Alexander-Rus/Fullstack-Web-App-MQP" target='_blank'>Github <i class="fab fa-github fa-2x"></i></a>
+            <br>
+            <br>
+            <a href="https://floating-retreat-14391.herokuapp.com/" target='_blank'>View Live Product!</a>
+            <p style="color: salmon;">Demo may take a few moments to load, due to heroku waking up.</p>
+        </div>
+        <div class="wpi">
+            <h3 class="text-secondary">WPI and the MQP</h3>
+            <hr>
+            <p>
+                The Major Qualifying Project is a large scale project that assess students’ knowledge in their specific field of study. Completed in the senior year of undergraduate study, the MQP often involves a combination of research and design. Students, either independently or in teams, work under a professor who advises them in the project process.
+                This very web application is a part of the MQP that has been completed by Alexander Rus and Alex Tian working under Dr. Kyumin Lee and PhD student Nguyen (Ben) Vo.
+            </p>
+        </div>
+        <img src="./img/WPI_5.png" alt="WPI Logo" class="wpi_logo">
+        <div class="Back-end1">
+            <h3 class="text-secondary">The Application</h3>
+            <hr>
+            <p>
+                The application is built using the MERN development stack, which stands for MongoDB, Express, React, and Node.js. Using Node.js, I built a back-end server using Express. This server would handle data collection and API interaction. MongoDB is a great NoSQL distributed database system that works great for storing our user information. React is a great JavaScript library that allows the creation of UI views using multiple different components. Using the Node package “Concurrently”, the back-end Express server runs simultaneously with the front-end React Application. The Express server calls on multiple different routes when we need to fetch data. For the user data, we call on routes that access MongoDB. These routes accept a particular username, and then send the proper JSON response to the front-end.            
+                The URL recommendation models require a lot of computational power, especially when there are over 12,000 URLs and almost 5,000 users in the dataset. Thus, I used AWS (Amazon Web Services) as our cloud computing solution, employing multiple EC2 virtual Linux machines to run scripts that insert the data into the database. Putty provides a good system to allow terminal acess to the serves and Filezilla was used as our means of file transfer to the servers.  In addition to the MongoDB serving data to the application, we also employed the Twitter API to fetch real-time twitter information about a given user. To use the Twitter API, we had to register with Twitter to get the appropriate Auth Keys. Once we acquired those, we pass the desired route a Twitter username, and the API returns the data that we desire.
+            </p>
+        </div>
+        <img src="./img/Web_6.PNG" alt="WPI Logo" class="Back-end-img1">
+        <img src="./img/Web_9.PNG" alt="WPI Logo" class="Back-end-img2">
+        <img src="./img/Web_10.PNG" alt="WPI Logo" class="Back-end-img3">
+        <div class="front-end">
+            <h3 class="text-secondary">Front-End Development</h3>
+            <hr>
+            <p>
+                The front-end of the application is built using React, and to add extra appeal and ease of use, I used the React UI Framework Material-UI. Material-UI is a great framework developed by Google that allows easy integration of components. Within the React front end, I employed multiple react libraries to help present our data. 
+            </p>
+        </div>
+        <div class="front-end2">
+            <p>
+                Upon visiting the web address, you will be greeted by the home search screen.
+            </p>
+        </div>
+        <img src="./img/Nav_1.PNG" alt="WPI Logo" class="front-endimg1">
+        <div class="front-end3">
+            <p>
+                On one side you have the clickable title card display, and on the other side you have the search bar. In the search bar you can enter a Twitter user-name either as a screen name(i.e 'Bob1234') or as a Twitter handle(i.e '@Bob1234'). Because we can only get the recommended URLS for users in our data set, we are ideally going to want to try and enter one of them. We can try entering a random Twitter user and hope for the best, or we can look at the scrolling text for some examples of users we have in the database.            
+            </p>
+        </div>
+        <img src="./img/Nav_2.PNG" alt="WPI Logo" class="front-endimg2">
+        <div class="front-end4">
+            <p>
+                With the user-name in the search bar, hit the 'EXPLORE' button, to be brought to the results page. The results page has a lot of different views, but it will always open with the 'Twitter Information' view first. At the top if we see the two green messages "Located User in Twitter" and "User Found in Dataset", that means we were able to find the Twitter user's information and get their recommended URLs. If one of those messages is red, then we cannot get the recommended URLs for that user.            
+            </p>
+        </div>
+        <img src="./img/Nav_3.PNG" alt="WPI Logo" class="front-endimg3">
+        <div class="front-end5">
+            <p>
+                Now we can view various different characteristics about our Twitter user, granted they provided the information in their Twitter profile. We can see some of their profile information in the left side panel and some of their activity stats in the right side. If we scroll down, we can see a graphical representation of their activity on the right. Additionally, we can see their URL recommendation activity at February 20, 2020. We can see that in the last 200 tweets this user sent, 57 of them contained URLs, however none of them were fact checking URLs.
+            </p>
+        </div>
+        <img src="./img/Nav_4.PNG" alt="WPI Logo" class="front-endimg4">
+        <div class="front-end6">
+            <p>
+                If we examine the panel on the left-hand side of the application, at the top we have a button labeled "SEARCH" which you can click if you would like to enter a different Twitter user into the search bar. Beneath that, we have the "Results" section. In this section we actually see what the recommended URLs for this user are based on our different metrics. Right now, we are in the "Twitter" view, but if we click on the second option, labeled "GAU Results", we are brought to a new view that displays the recommended URLs using the GAU recommendation system.
+            </p>
+        </div>
+        <img src="./img/Nav_6.PNG" alt="WPI Logo" class="front-endimg6">
+        <div class="front-end7">
+            <p>
+                In this view, we can see a list of cards displaying the recommended URLs ordered by how highly they score using this specific recommendation system's metrics. Each card has the logo of the fact checking website, the title of the article, the calculated score, and a bar graph to show said score visually. If one wants to visit the website, they can clickt the title, and if you want to see the full web address they can click to the card to expand it.
+            </p>
+        </div>
+        <img src="./img/Nav_7.PNG" alt="WPI Logo" class="front-endimg7">
+        <div class="front-end8">
+            <p>
+                There are four different recommendation models that we explored: "GAU", "Matrix Factorization", "Item Based Recommendation", and "User Based Recommendation". Each model is listed on the side panel, and can be clicked on to see the recommended URLs based on that system. Under the "Results" section of the navigation panel, there is an "About" section. This section is intended to provide the user with some useful information about the project, the logic behind the recommendation systems, and the MQP. By clicking on the "Navigation" option, the we are brought to the navigation section which is intended to help the user explore the web application(that's were we are now). If the user clicks on the "How it Works" option, they are brought to the explanation page where we explain how each one of the recommendation models works. Clicking on the "About Us" allows the user to learn about the project creators Alex Rus, Alex Tian. Dr. Lee, and Ben Vo. And lastly, there is the "MQP and WPI" section where we can learn about the Major Qualifying Project and Worcester Polytechnic Institute.
+            </p>
+        </div>
+    </div>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/68vmmFLIBYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </main>
+
+
+  <footer id="main-footer">
+    Copyright &copy; 2020
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

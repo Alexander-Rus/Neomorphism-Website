@@ -1,0 +1,298 @@
+// Widescreens
+@include mediaXl {
+    .projects {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .body1 {
+      margin-top: -47rem;
+    }
+
+    .container-wide {
+      animation: movin;
+      margin-top: 45rem;
+    }
+
+    @keyframes movin {
+      0% {margin-top: 100rem}
+      100% {margin-top: 45rem}
+    }
+
+    .container {
+      margin-top: 55rem;
+
+    }
+
+  }
+
+  @include mediaShort {
+    .activities-info {
+      .sculpting {
+        font-size: 1rem;
+      }
+      .sculpting2 {
+        font-size: 1rem;
+      }
+      .sculpting3 {
+        font-size: 1rem;
+      }
+      .track {
+        font-size: 1rem;
+      }
+      .track2 {
+        font-size: 1rem;
+      }
+      .track3 {
+        font-size: 1rem;
+      }
+      .blender {
+        font-size: 1rem;
+      }
+      .blender2 {
+        font-size: 1rem;
+      }
+    }
+
+    .about-info {
+      .bio {
+        font-size: 0.9rem;
+      }
+    }
+    .job {
+      font-size: 0.75rem;
+
+    }
+
+    .fullstack-info {
+      .intro {
+        font-size: 1rem;
+      }
+      .Back-end1 {
+        font-size: 1rem;
+      }
+      .front-end {
+        font-size: 1rem;
+      }
+      .front-end2 {
+        font-size: 1rem;
+      }
+      .front-end3 {
+        font-size: 1rem;
+      }
+      .front-end4 {
+        font-size: 1rem;
+      }
+      .front-end5 {
+        font-size: 1rem;
+      }
+      .front-end6 {
+        font-size: 1rem;
+      }
+      .front-end7 {
+        font-size: 1rem;
+      }
+      .front-end8 {
+        font-size: 1rem;
+      }
+      .wpi {
+        font-size: 1rem;
+      }
+    }
+    main {
+  
+      .lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+        font-size: 4rem;
+      }
+
+    }
+  }
+  
+  // Desktops & Laptops
+  @include mediaLg {
+    .projects {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .body1 {
+      margin-top: -37rem;
+    }
+    .activities-info {
+      .sculpting {
+        font-size: 1rem;
+      }
+      .sculpting2 {
+        font-size: 1rem;
+      }
+      .sculpting3 {
+        font-size: 1rem;
+      }
+      .track {
+        font-size: 1rem;
+      }
+      .track2 {
+        font-size: 1rem;
+      }
+      .track3 {
+        font-size: 1rem;
+      }
+      .blender {
+        font-size: 1rem;
+      }
+      .blender2 {
+        font-size: 1rem;
+      }
+      .wpi {
+        font-size: 1rem;
+      }
+    }
+
+    .fullstack-info {
+      .intro {
+        font-size: 1rem;
+      }
+      .Back-end1 {
+        font-size: 1rem;
+      }
+      .front-end {
+        font-size: 1rem;
+      }
+      .front-end2 {
+        font-size: 1rem;
+      }
+      .front-end3 {
+        font-size: 1rem;
+      }
+      .front-end4 {
+        font-size: 1rem;
+      }
+      .front-end5 {
+        font-size: 1rem;
+      }
+      .front-end6 {
+        font-size: 1rem;
+      }
+      .front-end7 {
+        font-size: 1rem;
+      }
+      .front-end8 {
+        font-size: 1rem;
+      }
+      .wpi {
+        font-size: 1rem;
+      }
+    }
+
+    .about-info {
+      .bio {
+        font-size: 0.9rem;
+      }
+    }
+    .job {
+      font-size: 0.75rem;
+
+    }
+
+    main {
+  
+      .lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+        font-size: 4rem;
+      }
+
+    }
+
+  }
+  
+  // Tablets & Small Laptops
+  @include mediaMd {
+    main {
+  
+      .lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+      }
+
+    }
+  
+    ul.menu-nav,
+    div.menu-branding {
+      float: none;
+      width: 100%;
+      min-height: 0;
+  
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  
+    .menu-nav {
+      height: 75vh;
+      transform: translate3d(-100%, 0, 0);
+      font-size: 24px;
+    }
+  
+    .menu-branding {
+      height: 25vh;
+      transform: translate3d(100%, 0, 0);
+  
+      .portrait {
+        background: url('../img/portrait_small.png');
+        width: 150px;
+        height: 150px;
+      }
+    }
+  
+    .about-info {
+      grid-template-areas:
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+  
+      grid-template-columns: 1fr;
+    }
+
+    .activities-info {
+      grid-template-areas:
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+  
+      grid-template-columns: 1fr;
+    }
+  
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .body1 {
+      margin-top: -38rem;
+    }
+
+  }
+  
+  // Smartphones
+  @include mediaSm {
+    main {
+      padding: 2rem;
+      #home h1 {
+        margin-top: 10vh;
+      }
+  
+      .lg-heading {
+        margin-top:1rem;
+        font-size: 5rem;
+      }
+
+    }
+    .projects {
+      grid-template-columns: 1fr;
+    }
+
+    .body1 {
+      margin-top: -40rem;
+    }
+  }
